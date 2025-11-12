@@ -1,0 +1,145 @@
+/* ===============================
+   ONBOARDING PAGE - Artify
+=============================== */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f5e6ff, #d8e9ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Main container */
+.onboard-container {
+  position: relative;
+  width: 90%;
+  max-width: 480px;
+  height: 400px; /* Fixed uniform height */
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Each slide fills entire container */
+.onboard-slide {
+  position: absolute;
+  inset: 0; /* replaces top/left/right/bottom 0 */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertical center */
+  align-items: center;     /* Horizontal center */
+  text-align: center;
+  padding: 5px 10px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* Active slide visible */
+.onboard-slide.active {
+  opacity: 1;
+  z-index: 1;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Image section */
+.onboard-slide img {
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  filter: drop-shadow(0px 6px 10px rgba(0,0,0,0.25));
+}
+
+/* Text styles */
+h2 {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  max-width: 300px;
+}
+
+/* Buttons */
+.next-btn, .start-btn {
+  background: linear-gradient(135deg, #6c63ff, #9a73ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 35px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 6px 15px rgba(108,99,255,0.4);
+}
+
+.next-btn:hover, .start-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #5848d1, #8c6bff);
+}
+
+/* Progress dots */
+.progress-dots {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background: #6c63ff;
+  transform: scale(1.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .onboard-container {
+    width: 90%;
+    height: 50px;
+    padding: 20px;
+  }
+
+  .onboard-slide img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

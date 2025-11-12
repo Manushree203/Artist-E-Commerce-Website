@@ -1,0 +1,124 @@
+/* 🎨 Artify Studio - Contact Page Styles */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #fffafc;
+  color: #333;
+}
+
+/* 🌈 Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff6600;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #ff6600;
+}
+
+/* 🖼️ Hero Section */
+.contact-hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(135deg, #ffe6f0, #fff2e6);
+}
+
+.contact-hero h1 {
+  font-size: 2.8rem;
+  color: #222;
+}
+
+.contact-hero p {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* 📬 Contact Form */
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 550px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 6px rgba(255, 102, 0, 0.2);
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #ff6600;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #e65c00;
+}
+
+/* 📍 Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #fafafa;
+  color: #777;
+  margin-top: 40px;
+}

@@ -1,0 +1,89 @@
+.about-hero {
+  background: url('../img/digital.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+.our-story {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.story-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.story-text {
+  flex: 1 1 50%;
+}
+
+.story-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.story-text p {
+  font-family: 'Inter', sans-serif;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.story-img img {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.mission {
+  background: #fafafa;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.mission h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+}
+
+.mission-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.mission-item {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 280px;
+}
+
+.mission-item h3 {
+  margin-bottom: 10px;
+  color: #2e8b57;
+}
+
+
