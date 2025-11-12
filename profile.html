@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Dashboard | Artify Studio</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/profile.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">🎨 Artify Studio</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="collections.html">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="artist-profile.html" class="icon active">👩‍🎨</a>
+    </div>
+  </div>
+</header>
+
+<section class="profile-section">
+  <div class="profile-container">
+    <!-- Left -->
+    <div class="profile-left">
+      <img src="img/artist.png" alt="Artist" class="profile-pic">
+      <h2 class="username">Aarav Sharma</h2>
+      <p class="email">aarav@artify.com</p>
+      <button class="edit-btn">Edit Profile</button>
+    </div>
+
+    <!-- Right -->
+    <div class="profile-right">
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="artworks">🖼️ My Artworks</button>
+        <button class="tab-btn" data-tab="sales">💰 Sales</button>
+        <button class="tab-btn" data-tab="upload">⬆️ Upload</button>
+      </div>
+
+      <div class="tab-content" id="artworks">
+        <h3>My Artworks</h3>
+        <div class="wishlist-grid">
+          <div class="wishlist-item">
+            <img src="img/art1.jpg" alt="">
+            <p>Golden Horizon</p>
+            <button class="remove-btn">Delete</button>
+          </div>
+          <div class="wishlist-item">
+            <img src="img/art2.jpg" alt="">
+            <p>Sunlit Dreams</p>
+            <button class="remove-btn">Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content hidden" id="sales">
+        <h3>Recent Sales</h3>
+        <div class="order-card">
+          <p><strong>Golden Horizon</strong> sold to Manushree Ray</p>
+          <span class="status delivered">₹4,500</span>
+        </div>
+        <div class="order-card">
+          <p><strong>Sunlit Dreams</strong> sold to Priya Patel</p>
+          <span class="status delivered">₹6,800</span>
+        </div>
+      </div>
+
+      <div class="tab-content hidden" id="upload">
+        <h3>Upload New Artwork</h3>
+        <form class="settings-form" enctype="multipart/form-data">
+          <label>Title</label>
+          <input type="text" placeholder="Enter artwork name">
+          <label>Price (₹)</label>
+          <input type="number" placeholder="5000">
+          <label>Upload Image</label>
+          <input type="file" accept="image/*">
+          <button class="btn-primary">Upload Artwork</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-bottom">
+    <p>© 2025 Artify Studio — Artist Dashboard</p>
+  </div>
+</footer>
+
+<script src="js/profile.js"></script>
+</body>
+</html>

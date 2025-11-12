@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paintings Collection | Artify Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/paintings.css">
+</head>
+<body>
+
+  <!-- Header -->
+  
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">🖼️ <span class="brand">Artify Studio</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="collections.html">Collections</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="search.html" class="icon">🔍</a>
+      <a href="cart.html" class="icon">🛒 <span id="cart-count">0</span></a>
+      <a href="profile.html" class="icon">👤</a>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="collection-hero">
+    <h1>Paintings Collection 🖌️</h1>
+    <p>Explore vibrant masterpieces from talented artists — where every stroke tells a story.</p>
+  </section>
+
+  <!-- Paintings Grid -->
+  <section class="paintings-gallery">
+    <div class="art-grid">
+      <div class="art-card">
+        <img src="img/paint1.jpg" alt="Hues of Strength">
+        <h3>Hues of Strength</h3>
+        <p class="price">₹5,200</p>
+        <button class="cart-btn" onclick="addToCart({name:'Sunset Glow', price:499, image:'img/painting1.jpg'})">Add to Cart</button>
+      </div>
+      <div class="art-card">
+        <img src="img/paint2.jpeg" alt="Ocean Whisper">
+        <h3>Ocean Whisper</h3>
+        <p class="price">₹7,800</p>
+        <button class="cart-btn" onclick="addToCart({name:'Morning Bliss', price:549, image:'img/painting2.jpg'})">Add to Cart</button>
+      </div>
+      <div class="art-card">
+        <img src="img/paint3.jpg" alt="Evocative portrait">
+        <h3>Evocative portrait</h3>
+        <p class="price">₹6,400</p>
+        <button class="cart-btn" onclick="addToCart({name:'Evocative portrait', price:6400, image:'img/painting3.jpg'})">Add to Cart</button>
+      </div>
+      <div class="art-card">
+        <img src="img/paint4.jpg" alt="Dreamscape Bloom">
+        <h3>Dreamscape Bloom</h3>
+        <p class="price">₹8,000</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="back-container">
+      <a href="index.html#collections" class="back-btn">⬅ Back to Collections</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Artify Studio</h3>
+        <p>Connecting artists and collectors.</p>
+      </div>
+      <div class="footer-center">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#shop">Shop</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-right social-icons">
+        <a href="#"><img src="img/insta.svg" alt="Instagram"></a>
+        <a href="#"><img src="img/pinterest.svg" alt="Pinterest"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Artify Studio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/paintings.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
